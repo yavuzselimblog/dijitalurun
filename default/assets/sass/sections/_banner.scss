@@ -1,0 +1,137 @@
+/*----------------------------------------------
+    ## Banner
+----------------------------------------------*/
+.banner-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+    &.banner-area-2 {
+        background: rgba(224, 244, 241, 0.502);
+        .banner-area-inner {
+            padding-bottom: 0;
+            .thumb {
+                margin-top: 31px;
+            }
+            .form-area {
+                border-radius: 5px;
+                background-color: rgb(255, 255, 255);
+                padding: 43px 85px 50px;
+                box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+                margin-top: 110px;
+                margin-bottom: -12%;
+                h3 {
+                    font-weight: 500;
+                    font-family: var(--body-font);
+                }
+                form {
+                    .nice-select {
+                        border: 2px solid rgb(210, 237, 233);
+                        border-right: 2px solid rgb(232, 246, 244);
+                    }
+                    .form-control {
+                        border: 2px solid rgb(210, 237, 233);
+                    }
+                    .btn {
+
+                    }
+                } 
+            }
+        }
+        .banner-inner {
+            padding-top: 100px;
+            h2 {
+                font-size: 60px;
+                font-weight: 400;
+                color: var(--heading-color);
+                span {
+                    color: $color-main;
+                }
+            }
+            p {
+                margin-top: 17px;
+                color: var(--heading-color);
+            }
+        }
+    }
+}
+.banner-area-inner {
+    padding-bottom: 155px;
+    form {
+        position: relative;
+        margin-top: 55px;
+        .nice-select {
+            height: 80px;
+            position: absolute;
+            line-height: 80px;
+            border-radius: 10px 0 0 10px;
+            font-size: 18px;
+            color: rgb(86, 88, 114);
+            font-family: var(--body-font);
+            font-weight: 500;
+            border: 0;
+            border-right: 2px solid rgb(225, 225, 225);
+            padding: 0 97px 0 50px;
+            &:after {
+                right: 31px;
+                height: 9px;
+                width: 9px;
+                border-bottom: 2px solid rgb(9, 64, 116);
+                border-right: 2px solid rgb(9, 64, 116);
+            }
+        }
+        .form-control {
+            height: 80px;
+            line-height: 80px;
+            border: 0;
+            border-radius: 0;
+            border-radius: 10px;
+            padding: 0 110px 0 283px;
+        }
+        .btn {
+            height: 80px;
+            line-height: 80px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 0 10px 10px 0;
+            background: $color-main;
+            padding: 0 33px 0 40px;
+
+        }
+    }
+}
+.banner-inner {
+    position: relative;
+    z-index: 3;
+    padding-top: 125px;
+	h2 {
+		font-size: 50px;
+		position: relative;
+		margin-bottom: 0px;
+        font-weight: 400;
+        color: #ffffff;
+        font-family: var(--body-font);
+        animation: 1.6s 0.6s fadeInUp both;
+        span {
+            font-weight: 700;
+        }
+	}
+	p {
+		position: relative;
+        font-size: 18px;
+        color: #ffffff;
+        margin-top: 32px;
+        animation: 1.6s 0.8s fadeInUp both;
+	}
+	.btn-wrap {
+        animation: 1.6s 1.0s fadeInUp both;
+		margin-top: 35px;
+        .btn {
+            background: $color-main;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 55px;
+            font-size: 15px;
+        }
+	}
+}

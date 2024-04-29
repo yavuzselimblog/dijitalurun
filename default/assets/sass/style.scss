@@ -1,0 +1,57 @@
+/*
+Theme Name: Drketa
+Theme URI: https://solverwp.com/html/drketa
+Author: solverwp
+Author URI: https://solverwp.com 
+Description: Drketa - Digital Marketplace HTML Template
+Version: 1.0.2
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Global
+    ## Global
+    ## Mixins
+    ## Theme
+    ## Variables
+    ## Common
+
+# Sections
+    ## Nav Bar
+    ## Banner
+    ## Brand Area
+    ## Footer
+    ## Widgets
+
+# Elements
+    ## accordion
+    ## filter
+    ## apartment
+    ## blog
+    ## city
+    ## feature
+    ## gallery
+    ## intro
+    ## main-search
+    ## pricing
+    ## service
+    ## team
+    ## user-list
+
+--------------------------------------------------------------*/
+
+//== Global Design
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_common";
+
+
+//== Pages
+//== Sections 
+@import "sections/_widgets";
+@import "sections/_navbar";
+@import "sections/_banner";
+@import "sections/_content";
+@import "sections/_blog";
+@import "sections/_footer";
