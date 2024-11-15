@@ -109,8 +109,6 @@ class User extends CI_Controller{
     }
 
 
-
-
     public function password(){
 
         $viewData = array(
@@ -174,6 +172,70 @@ class User extends CI_Controller{
             
             echo json_encode($error);
 
+        }
+
+    }
+
+
+    public function orders(){
+
+        $perPage        = 10;
+        $ordercount     = $this->Common_model->getcount(['sipuye'=>ss('usercode')],'siparisler');
+        $pageSegment    = ($this->uri->segment(2)) ? $this->uri->segment(2) : 1;
+        $pkCount        = ($pageSegment - 1) * $perPage;
+
+        $links       = paginationHelper(
+            base_url('orders'),
+            $ordercount,
+            $perPage,
+            2,
+            TRUE,['class' => 'page-link']
+        );
+
+        $viewData      = array(
+            "setting"      => $this->Common_model->get(['id'=>1],'ayarlar'),
+            "orderlist"    => $this->Common_model->getLimitAll(['sipuye'=>ss('usercode')],$perPage,$pkCount,'siparisler','siptarih','DESC'),
+            "ordercount"   => $ordercount,
+            "orderlinks"   => $links,
+
+            'social'       => $this->Common_model->getAll(['sosdurum'=>1],'sosyalmedyalar'),
+            'pages'        => $this->Common_model->getAll(['sayfadurum'=>1],'sayfalar'),
+            'popular'      => $this->Common_model->getLimitAll(['urun_durum'=>1],8,0,'urunler','urun_goruntulenme','DESC'),
+            'popblog'      => $this->Common_model->getLimitAll(['blogdurum'=>1],4,0,'blog','bloggoruntulenme','DESC'),
+        );
+
+        $this->load->view('default/myorders_view',$viewData);
+       
+    }
+
+    public function orderdetail($par){
+        
+        if(!$par){
+            redirect(base_url());
+        }
+
+        $order = $this->Common_model->get(['sipno'=>$par],'siparisler');
+        if($order){
+
+            $product  = $this->Common_model->get(['urun_kodu'=>$order->sipurun],'urunler');
+            $user     = $this->Common_model->get(['uye_kodu'=>$order->sipuye],'uyeler');
+
+            $viewData = array(
+                'product'      => $product,
+                'order'        => $order,
+                'user'         => $user,
+
+                "setting"      => $this->Common_model->get(['id'=>1],'ayarlar'),
+                'social'       => $this->Common_model->getAll(['sosdurum'=>1],'sosyalmedyalar'),
+                'pages'        => $this->Common_model->getAll(['sayfadurum'=>1],'sayfalar'),
+                'popular'      => $this->Common_model->getLimitAll(['urun_durum'=>1],8,0,'urunler','urun_goruntulenme','DESC'),
+                'popblog'      => $this->Common_model->getLimitAll(['blogdurum'=>1],4,0,'blog','bloggoruntulenme','DESC'),
+            ); 
+
+            $this->load->view('default/orderdetail_view',$viewData);
+
+        }else{
+            redirect(base_url()); 
         }
 
     }

@@ -92,7 +92,7 @@
                     
                 </div>
                 <div class="col-lg-4">
-                    <div class="sidebar-area">
+                    <div class="sidebar-area"> 
                         <div class="widget widget-cart">
                             <div class="widget-cart-inner text-center">
                               

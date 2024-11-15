@@ -77,3 +77,7 @@ $route['errorpage']           = 'order/error';
 $route['resultpaytr']         = 'creditcard/resultpaytr';
 $route['profile']             = 'user/index';
 $route['password']            = 'user/password';
+$route['orders']              = 'user/orders';
+$route['orders/(:num)']       = 'user/orders/$1';
+$route['orderdetail/(:any)']  = 'user/orderdetail/$1';
+
