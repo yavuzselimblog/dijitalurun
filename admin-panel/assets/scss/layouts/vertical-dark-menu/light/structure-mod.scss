@@ -1,0 +1,186 @@
+@import '../../../light/base/base';
+
+body {
+  .single-post-content {
+    background-color: transparent;
+  }
+
+  .production-descriptions {
+    .pro-des-content {
+      .accordion {
+        .card {
+          background: transparent;
+          .card-header {
+            background-color: transparent;
+          }
+          .card-body {
+            background: transparent;
+          }
+        }  
+      }
+    }
+  }
+
+  .widget-content-area {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #e0e6ed !important;
+  }
+
+  .general-info, .social {
+    background-color: transparent;
+  }
+  .section {
+    box-shadow: none;
+  }
+  
+
+  // APPS
+
+  .calendar-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+
+  // --- CHATS ---
+  .chat-system {
+    .user-list-box {
+      background: transparent;
+    }
+    
+    .chat-box {
+      .chat-box-inner {
+        .chat-meta-user {
+          &.chat-active {
+            background-color: #fafafa;
+          }
+        }
+      }
+      
+      .chat-footer {
+        &.chat-active {
+          background-color: #fafafa;
+        }
+      }
+
+      .chat-input {
+        input {
+          background-color: #fafafa;
+        }
+      }
+    }
+  }
+
+
+  // --- Mailbox ---
+  .mail-box-container {
+    background-color: transparent;
+
+    .mailbox-inbox {
+      background: #fafafa;
+      
+      .search {
+        input {
+          background: #fafafa;
+        }
+      }
+    }
+  }
+
+  // --- Todo List ---
+  .mail-box-container {
+    background-color: transparent;
+  }
+
+
+  // --- Notes ---
+  .note-container.note-grid {
+    .note-item {
+      .note-inner-content {
+        background: transparent;
+      }
+    }    
+  }
+  
+  // --- Scrumboard ---
+  .connect-sorting {
+    background: transparent;
+
+    // .scrumboard {
+      .card {
+        background: transparent;
+        border: 1px dashed #e0e6ed;
+      }
+    // }
+  }
+  
+  
+  // --- Contacts ---
+  .searchable-container {
+    .searchable-items.list {
+      .items {
+        .item-content {
+          background: transparent;
+        }    
+      }  
+    }
+  }
+
+
+
+  .invoice-inbox {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .invoice-actions-btn {
+    background-color: transparent;
+  }
+
+  .invoice-details-body {
+    background-color: transparent;
+  }
+  .invoice-detail-body {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .invoice-actions {
+    background-color: transparent;    
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

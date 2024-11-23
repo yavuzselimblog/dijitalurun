@@ -1,0 +1,59 @@
+@import '../../base/base';
+
+.widget {
+  &.widget-mini-two {
+    padding: 20px;
+    .media {
+      .icon {
+        // width: 50%;
+        width: 47%;
+        align-self: center;
+        .widget-text {
+          margin-bottom: 3px;
+          color: #888ea8;
+        }
+        .widget-numeric-value {
+          font-size: 26px;
+          margin-bottom: 0;
+          color: #000;
+          font-weight: 700;
+        }
+
+      }
+
+      .media-body {
+        width: 50%;
+        // position: absolute;
+        right: 0;
+        top: auto;
+        bottom: auto;
+        margin-top: -6px;
+        svg {
+
+        }
+      }
+
+    }
+  }
+}
+
+
+@media (max-width: 1500px) and (min-width: 1440px) {
+
+  .widget {
+    &.widget-mini-two {
+      .media {
+        .icon {
+          width: 47%;
+        }
+        .media-body {
+          width: 53%;
+        }     
+        
+      }
+      
+    }
+
+  }
+  
+}

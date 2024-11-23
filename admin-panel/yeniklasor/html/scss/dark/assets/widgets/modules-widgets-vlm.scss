@@ -1,0 +1,76 @@
+// @use './analytics';
+// @use './sales';
+
+body {
+    &.dark {
+
+        .widget {
+            border: 1px solid #0e1726;
+            background: transparent;
+        
+            &.widget-six,
+            &.widget.widget-card-four,
+            &.widget-card-five,
+            &.widget-chart-three,
+            &.widget-activity-five,
+            &.widget-one_hybrid,
+            &.widget-five,
+            &.widget-card-one,
+            &.widget-card-two,
+            &.widget-seven  
+            {
+                background: transparent;
+            }
+        
+            &.widget-activity-five {
+                .w-shadow-top {
+                    background: -webkit-linear-gradient(180deg, #060818 44%, #060818d1 73%, #2C303C00);
+                    background: linear-gradient(180deg, #060818 44%, #060818d1 73%, #2C303C00);
+                }
+                .w-shadow-bottom {
+                    background: -webkit-linear-gradient(180deg, #060818 44%, #060818d1 73%, #2C303C00);
+                    background: linear-gradient(180deg, #060818 44%, #060818d1 73%, #2C303C00);
+                }
+            }
+
+
+            &.widget-card-one {
+                .widget-content {
+                    .media {
+                      border-bottom: 1px dashed #0e1726;
+                    }
+                }
+            }
+
+            &.widget-card-two {
+                .widget-content {
+                    .media {
+                        border-bottom: 1px dashed #0e1726;
+                    }
+                }                
+            }
+        }
+
+        .widget-two {
+            background: transparent;
+            border: 1px solid #0e1726;
+        }
+        .widget-four {
+            background: transparent;
+            border: 1px solid #0e1726;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

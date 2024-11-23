@@ -1,0 +1,249 @@
+@import '../../../light/base/base';
+
+body {
+  &.dark {
+    .single-post-content {
+      background-color: transparent;
+    }
+
+    .production-descriptions {
+      .pro-des-content {
+        .accordion {
+          .card {
+            .card-header {
+              background-color: transparent;
+            }
+            .card-body {
+              background: transparent;
+            }
+          }  
+        }
+      }
+    }
+
+    .widget-content-area {
+      background: transparent;
+      box-shadow: none;
+      border: 1px solid #0e1726!important;
+    }
+  
+    .general-info, .social {
+      background-color: transparent;
+    }
+    .section {
+      box-shadow: none;
+    }
+    
+    .tooltip {
+      .tooltip-inner {
+        background-color: #191e3a;
+      }
+    }
+
+    .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+    .bs-tooltip-top .tooltip-arrow::before {
+      border-top-color: #191e3a;
+    }
+    .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+    .bs-tooltip-bottom .tooltip-arrow::before {
+      border-bottom-color: #191e3a;
+    }
+    .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+    .bs-tooltip-right .tooltip-arrow::before {
+      border-right-color: #191e3a;
+    }
+    .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+    .bs-tooltip-left .tooltip-arrow::before {
+      border-left-color: #191e3a;
+    }
+
+    .popover {
+      background-color: #191e3a;
+      border: 1px solid #191e3a;
+      .popover-body {
+        background-color: #191e3a;
+      }
+      &.bs-popover-auto[data-popper-placement^=right] > .popover-arrow:after,
+      &.bs-popover-auto[data-popper-placement^=right] > .popover-arrow:before {
+        border-right-color: #191e3a;
+      }
+      &.bs-popover-auto[data-popper-placement^=left] > .popover-arrow:after,
+      &.bs-popover-auto[data-popper-placement^=left] > .popover-arrow:before {
+        border-left-color: #191e3a;
+      }
+      &.bs-popover-auto[data-popper-placement^=top] > .popover-arrow:after,
+      &.bs-popover-auto[data-popper-placement^=top] > .popover-arrow:before {
+        border-top-color: #191e3a;
+      }
+      &.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow:after,
+      &.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow:before {
+        border-bottom-color: #191e3a;
+      }
+    }
+
+    
+
+    // APPS
+
+    .calendar-container {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .fc-theme-standard {
+      td {
+        border: 1px solid #191e3a;
+      }
+      th {
+        border: 1px solid #191e3a;
+      }
+      .fc-scrollgrid {
+        border: 1px solid #191e3a;
+      }
+    }
+  
+  
+    // --- CHATS ---
+    .chat-system {
+      .user-list-box {
+        background: transparent;
+      }
+      
+      .chat-box {
+        .chat-box-inner {
+          .chat-meta-user {
+            &.chat-active {
+              background-color: #060818;
+            }
+          }
+        }
+        
+        .chat-footer {
+          &.chat-active {
+            background-color: #060818;
+          }
+        }
+  
+        .chat-input {
+          input {
+            background-color: #060818;
+          }
+        }
+      }
+    }
+  
+  
+    // --- Mailbox ---
+    .mail-box-container {
+      background-color: transparent;
+  
+      .mailbox-inbox {
+        background: #060818;
+        
+        .search {
+          input {
+            background: #060818;
+          }
+        }
+      }
+    }
+  
+    // --- Todo List ---
+    .mail-box-container {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+  
+    // --- Notes ---
+    .note-container.note-grid {
+      .note-item {
+        .note-inner-content {
+          background: transparent;
+        }
+      }    
+    }
+    
+    // --- Scrumboard ---
+    .connect-sorting {
+      background: transparent;
+
+      // .scrumboard {
+        .card {
+          background: transparent;
+          border: 1px dashed #0e1726;
+        }
+      // }
+    }
+    
+    
+    // --- Contacts ---
+    .searchable-container {
+      .searchable-items.list {
+        .items {
+          .item-content {
+            background: transparent;
+          }    
+        }  
+      }
+    }
+
+
+    .invoice-inbox {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .invoice-actions-btn {
+      background-color: transparent;
+    }
+  
+    .invoice-details-body {
+      background-color: transparent;
+    }
+    .invoice-detail-body {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .invoice-actions {
+      background-color: transparent;    
+    }
+    
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

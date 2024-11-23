@@ -1,0 +1,112 @@
+@import '../../base/base';
+
+.widget {
+  &.widget-sub-widget-one {
+    padding: 20px;
+    padding-bottom: 5px;
+
+    .widget-heading {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        align-self: center;
+        font-size: 17px;
+        display: block;
+        color: #0e1726;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      .dropdown {
+        a {
+          svg {
+            color: #888ea8;
+            width: 19px;
+            height: 19px;
+          }
+        }
+      }
+    }
+
+    .widget-content {
+
+      .sub-widget-inner-one {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e0e6ed;
+        border-radius: 0;
+        .media {
+
+          .sub-widget-inner-content {
+            width: 45%;
+            .widget-text {
+              margin-bottom: 3px;
+              color: #888ea8;
+            }
+            .widget-numeric-value {
+              font-size: 30px;
+              margin-bottom: 0;
+              color: #000;
+              font-weight: 700;
+            }
+            .widget-numeric-stats {
+              color: #00ab55;
+              font-size: 12px;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+
+          }
+
+          .media-body {
+            width: 55%;
+          }
+          
+        }
+        
+      }
+
+      .sub-widget-inner-two {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-radius: 0;
+        .media {
+
+          .sub-widget-inner-content {
+            width: 45%;
+            .widget-text {
+              margin-bottom: 3px;
+              color: #888ea8;
+            }
+            .widget-numeric-value {
+              font-size: 30px;
+              margin-bottom: 0;
+              color: #000;
+              font-weight: 700;
+            }
+            .widget-numeric-stats {
+              color: #00ab55;
+              font-size: 12px;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+          }
+
+          .media-body {
+            width: 55%;
+          }
+          
+        }
+        
+      }
+     
+    }
+  }
+}

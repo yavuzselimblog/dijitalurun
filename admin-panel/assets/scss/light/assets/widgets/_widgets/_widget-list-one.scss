@@ -1,0 +1,67 @@
+@import '../../base/base';
+
+.widget {
+  &.widget-list-one {
+    padding: 20px;
+
+    .widget-heading {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        align-self: center;
+        font-size: 17px;
+        display: block;
+        color: #0e1726;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+    }
+
+    .widget-content {
+      .w-list-group {
+        .media {
+
+          img {
+            width: 45px;
+            height: 45px;
+            margin-right: 16px;
+            border-radius: 10px;
+          }
+
+          .media-body {
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            .item-content {
+              .usr-name {
+                font-size: 16px;
+                margin-bottom: 1px;
+                font-weight: 600;
+                color: #000;
+  
+              }
+              .subtitle {
+                margin-bottom: 0;
+              }
+              
+            }
+
+            .list-task-action {
+              .dropdown {
+                .dropdown-toggle {
+                  svg {
+                    color: #888ea8;
+                    width: 19px;
+                    height: 19px;
+                  }
+                }
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

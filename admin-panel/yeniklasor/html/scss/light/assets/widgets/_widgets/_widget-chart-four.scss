@@ -1,0 +1,66 @@
+@import '../../base/base';
+
+.widget {
+  &.widget-chart-four {
+    padding: 20px;
+    padding-bottom: 5px;
+
+    .widget-heading {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        align-self: center;
+        font-size: 17px;
+        display: block;
+        color: #0e1726;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      .dropdown {
+        a {
+          svg {
+            color: #888ea8;
+            width: 19px;
+            height: 19px;
+          }
+        }
+      }
+    }
+
+    .widget-content {
+      .w-list-group {
+
+        .card {
+          border: none;
+          box-shadow: none;
+          background: transparent;
+          img {
+            border-radius: 26px;
+          }
+
+          .card-body {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0 0 0;
+            .widget-card-content {
+              h5 {
+                &.card-title {
+                  
+                }
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+            span {
+
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ class Blog extends CI_Controller{
     public function index(){
 
         //yavuzselim/blog/10 /15 /20
-        //yavuzselim/blog/1 /2 /selim
+        //yavuzselim/blog/1 /2 /selimaaa
 
         $perPage     = 6;
         $blogcount   = $this->Common_model->getcount(['blogdurum'=>1],'blog');

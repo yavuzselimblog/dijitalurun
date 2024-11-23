@@ -1,0 +1,65 @@
+@import '../../base/base';
+
+.widget {
+  &.widget-eight {
+    padding: 20px;
+
+    .widget-heading {
+      margin-bottom: 20px;
+      h5 {
+        font-size: 17px;
+        display: block;
+        color: #0e1726;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+    }
+
+    .widget-content {
+      .w-list-content {
+        .w-list {
+          margin-bottom: 18.5px;
+          .w-list-details {
+
+            .w-list-info {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              h6 {
+                margin-bottom: 0;
+                font-weight: 600;
+              }
+              p {
+                &.summary-count {
+                  font-weight: 600;
+                }
+              }
+            }
+
+            .w-list-stats {
+              .progress {
+                border-radius: 16px;
+                height: 6px;
+                margin-bottom: 0;
+                .progress-bar {
+
+                }
+              }
+            }
+
+          }
+
+          &:last-child {
+            // background-color: #000;
+            margin-bottom: 10px;
+            .w-list-stats {
+              .progress {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

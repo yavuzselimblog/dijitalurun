@@ -1,0 +1,57 @@
+// @use './analytics';
+// @use './sales';
+
+body {
+    
+    .widget {
+        border: 1px solid #e0e6ed;
+        background: transparent;
+    
+        &.widget-six,
+        &.widget.widget-card-four,
+        &.widget-card-five,
+        &.widget-chart-three,
+        &.widget-activity-five,
+        &.widget-one_hybrid,
+        &.widget-five,
+        &.widget-card-one,
+        &.widget-card-two,
+        &.widget-seven
+        {
+            background: transparent;
+        }
+    
+        
+    
+        &.widget-activity-five {
+            .w-shadow-top {
+                background: linear-gradient(180deg, #fafafa 44%, rgba(250, 250, 250, 0.8196078431) 73%, rgba(250, 250, 250, 0));
+            }
+            .w-shadow-bottom {
+                background: linear-gradient(180deg, #ffffff 44%, rgba(255, 255, 255, 0.8196078431) 73%, rgba(44, 48, 60, 0));
+            }
+        }
+    }
+    
+    .widget-two {
+        background: transparent;
+        border: 1px solid #e0e6ed;
+    }
+    .widget-four {
+        background: transparent;
+        border: 1px solid #e0e6ed;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
