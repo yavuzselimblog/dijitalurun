@@ -12,6 +12,10 @@ class Common_model extends CI_Model{
         return $this->db->where($where)->get($table)->row();
     }
 
+    public function getrow($where, $table){
+        return $this->db->where($where)->get($table)->row();
+    }
+
     public function getAll($where,$table){
         return $this->db->where($where)->get($table)->result();
     }

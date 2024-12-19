@@ -10,8 +10,7 @@ class User extends CI_Controller{
         userchecksession();
         ##session kontrolleri sonu
     }
-
-    public function index(){
+     public function index(){
 
         $viewData = array(
 			'setting'      => $this->Common_model->get(['id'=>1],'ayarlar'),

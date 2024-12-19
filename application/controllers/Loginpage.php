@@ -391,7 +391,7 @@ class Loginpage extends CI_Controller{
                             'icon'  => 'error'
                         );
 
-                    }
+                    } 
 
                 }else{
 
